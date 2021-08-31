@@ -8,6 +8,7 @@ import {
   faTwitter,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
+import { Link } from "gatsby"
 
 export default function Layout({ children }) {
   const [showMenu, setShowMenu] = useState(false)
@@ -48,10 +49,10 @@ export default function Layout({ children }) {
         </div>
         <div className="section_2">
           <div className="navz">
-            <span>Home</span>
-            <span>Work</span>
-            <span>Resume</span>
-            <span>Contact</span>
+            <Link to="/">Home</Link>
+            <Link to="/work">Work</Link>
+            <Link to="/resume">Resume</Link>
+            <Link to="/contact">Contact</Link>
           </div>
           <div className="socialz">
             <div className="socialz_text">

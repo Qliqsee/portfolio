@@ -20,16 +20,16 @@ export default function Header({ showMenu, setShowMenu, theme, setTheme }) {
       <div className="navigation">
         <div className="logo">Qliqsee.</div>
         <div className="links">
-          <Link className="link_items link_1 active" to="/">
+          <Link className="link_items link_1" to="/">
             Home
           </Link>
-          <Link className="link_items link_2" to="work">
+          <Link className="link_items link_2" to="/work">
             Work
           </Link>
-          <Link className="link_items link_3" to="resume">
+          <Link className="link_items link_3" to="/resume">
             Resume
           </Link>
-          <Link className="link_items link_4" to="contact">
+          <Link className="link_items link_4" to="/contact">
             Contact
           </Link>
         </div>
