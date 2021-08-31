@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[899],{6360:function(e,t,r){r.r(t),r.d(t,{default:function(){return u}});var l=r(7294),n=r(6147);function u(){return l.createElement(n.Z,null,"Resume page")}}}]);
+//# sourceMappingURL=component---src-pages-resume-jsx-2520b7f448838055d3aa.js.map
