@@ -5,6 +5,7 @@ import { init } from "ityped"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/Layout"
+import { Link } from "gatsby"
 
 export default function Home() {
   // ityped animation start
@@ -44,10 +45,10 @@ export default function Home() {
             </p>
           </div>
           <div className="explore">
-            <span>
+            <Link to="work">
               Explore{" "}
               <FontAwesomeIcon className="right_icon" icon={faCaretRight} />
-            </span>
+            </Link>
           </div>
         </div>
       </div>

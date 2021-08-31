@@ -93,11 +93,12 @@
         justify-content: center;
       }
 
-      span {
+      a {
         display: inline-block;
         padding: 10px 20px;
         background-color: $dlb;
         color: whitesmoke;
+        text-decoration: none;
 
         @include mobile {
           padding: 7px 15px;

@@ -14,6 +14,38 @@
         font-size: 20px;
       }
     }
+    .links {
+      display: flex;
+      justify-content: space-between;
+      font-size: 22px;
+      color: $ddb;
+      margin-right: 20px;
+      text-decoration: none;
+
+      @include mobile {
+        display: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: $ddb;
+        transition: all 0.2s ease;
+
+        &:hover {
+          border-bottom: 3px solid $ldt;
+        }
+        &.active {
+          border-bottom: 3px solid $ldt;
+        }
+      }
+
+      .link_items:not(:last-child) {
+        margin-right: 25px;
+      }
+      .link_items {
+        margin-right: 25px;
+      }
+    }
     .logo {
       font-size: 30px;
       font-weight: 500;

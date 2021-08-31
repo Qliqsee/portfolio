@@ -18,6 +18,34 @@
     &.dark {
       background-color: $ddb;
 
+      // work page dark mode
+      .card {
+        background-color: #373256;
+        box-shadow: 3px 3px 5px #232020;
+
+        .c_section_2 span {
+          color: whitesmoke;
+        }
+        .c_section_3 {
+          div {
+            color: $ddt;
+          }
+        }
+      }
+
+      .links {
+        a {
+          color: $dlt;
+
+          &:hover {
+            border-bottom: 3px solid $ddt;
+          }
+          &.active {
+            border-bottom: 3px solid $ddt;
+          }
+        }
+      }
+
       .logo {
         color: $dlt;
       }
