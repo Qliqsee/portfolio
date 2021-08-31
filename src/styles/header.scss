@@ -1,0 +1,67 @@
+@import "./global.scss";
+
+.header {
+  margin-bottom: 20px;
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+
+    .mode {
+      font-size: 30px;
+      color: $llt;
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+    .logo {
+      font-size: 30px;
+      font-weight: 500;
+
+      @include mobile {
+        font-size: 23px;
+      }
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      // transform: translateY(5px);
+
+      @include desktop {
+        display: none;
+      }
+      span {
+        transition: all 0.5s ease;
+        height: 2px;
+        transform-origin: left;
+        background-color: black;
+      }
+      .line_1 {
+        width: 30px;
+      }
+      .line_2 {
+        width: 25px;
+      }
+      .line_3 {
+        width: 20px;
+      }
+
+      &.active {
+        .line_1 {
+          width: 27px;
+          transform: rotate(45deg);
+        }
+        .line_2 {
+          opacity: 0;
+        }
+        .line_3 {
+          transform: rotate(-45deg);
+          width: 29px;
+        }
+      }
+    }
+  }
+}

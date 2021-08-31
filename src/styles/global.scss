@@ -1,0 +1,63 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+// general
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Josefin Sans";
+  // font-family: "Roboto";
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+#___gatsby {
+  height: 100%;
+}
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+// dark Mode colors
+$ddb: #28284a;
+$dlb: #20315d;
+$ddt: #c4d29a;
+$dlt: #eee;
+
+// Light Mode colors
+$ldb: #fbf7f7;
+$llb: #6f6f98;
+$ldt: #111;
+$llt: #777778;
+
+// media queries
+
+$mWidth: 968px;
+$dWidth: 969px;
+$xsWidth: 300px;
+
+@mixin mobile {
+  @media (max-width: #{$mWidth}) {
+    @content;
+  }
+}
+
+@mixin xsMobile {
+  @media (max-width: #{$xsWidth}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$dWidth}) {
+    @content;
+  }
+}

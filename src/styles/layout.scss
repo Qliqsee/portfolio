@@ -1,0 +1,154 @@
+@import "./global.scss";
+
+.main_layout {
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease;
+
+  .layout {
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px 20px 40px 20px;
+    transition: opacity 1s ease;
+    opacity: 1;
+
+    &.dark {
+      background-color: $ddb;
+
+      .logo {
+        color: $dlt;
+      }
+      .mode {
+        color: $ddt;
+      }
+      .title {
+        color: $dlt;
+      }
+      .role span {
+        color: $ddt;
+      }
+      .description {
+        color: $dlt;
+        span {
+          color: $ddt;
+        }
+      }
+      .icons span {
+        color: $dlt;
+      }
+      .section_2 {
+        color: $dlt;
+
+        span {
+          color: $ddt;
+        }
+      }
+      .hamburger span {
+        background-color: $dlt;
+      }
+    }
+
+    &.hide {
+      @include mobile {
+        display: none;
+        opacity: 0;
+        width: 0;
+      }
+    }
+
+    @include mobile {
+      padding: 20px 10px;
+    }
+  }
+  .slider {
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 10px;
+    transition: opacity 1s ease;
+    opacity: 1;
+
+    &.dark {
+      background-color: $ddb;
+      .logo {
+        color: $dlt;
+      }
+      .mode {
+        color: $ddt;
+      }
+      .hamburger span {
+        background-color: $dlt;
+      }
+      .section_2 {
+        .navz {
+          color: white;
+        }
+        .socialz {
+          .socialz_text {
+            color: $ddt;
+          }
+          .socialz_icons {
+            color: $dlt;
+          }
+        }
+      }
+    }
+
+    @include desktop {
+      display: none;
+    }
+    .section_2 {
+      display: flex;
+      margin-top: 40px;
+      flex-direction: column;
+
+      .navz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        margin-bottom: 40px;
+        color: $ddb;
+
+        span:not(:last-child) {
+          margin-bottom: 22px;
+        }
+      }
+      .socialz {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        .socialz_text {
+          font-size: 19px;
+          display: flex;
+          justify-content: center;
+          font-weight: 500;
+          color: $llt;
+        }
+        .socialz_icons {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+
+          span {
+            margin-right: 20px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    &.hide {
+      @include mobile {
+        display: none;
+        opacity: 0;
+        width: 0;
+      }
+    }
+  }
+}
