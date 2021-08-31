@@ -30,7 +30,7 @@ export default function Home() {
           </div>
         </div>
         <div className="section_2">
-          <div className="title">Hello, I'm Agboola Iyanu</div>
+          <div className="title">Hello, I'm Agboola Iyanu.</div>
           <div className="role">
             <span ref={textRef}></span>
           </div>
